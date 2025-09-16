@@ -1,0 +1,223 @@
+.calculator {
+  &__wrapper {
+    border-radius: 30px;
+    border: 1px solid #a6741a;
+    background: #fff;
+    display: flex;
+    padding: 40px 75px;
+    justify-content: space-between;
+    gap: 114px;
+
+    @include desktop{
+      gap: 30px;
+    }
+    @include mini-desktop{
+      padding: 30px;
+    }
+    @include small-mobile{
+      padding: 20px 15px;
+    }
+
+    &-left {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__label {
+    margin-bottom: 15px;
+  }
+  &__input {
+    border-bottom: 1px solid #c3c3c3;
+    display: flex;
+    padding: 14px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 47px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+
+    @include mobile{
+      font-size: 16px;
+      padding: 14px 5px 15px;
+    }
+    @include small-mobile{
+      font-size: 14px;
+      padding: 14px 0px 15px;
+    }
+  }
+  &__select {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: 28px;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+      background: url('../../assets/icons/vector.svg') no-repeat center /
+        contain;
+      pointer-events: none;
+    }
+    &:focus-within::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  &__string {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+  }
+
+  &__button {
+    border-radius: 30px;
+    background: #ef7f1a;
+    display: flex;
+    padding: 11.5px 20px 13.5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+}
+
+.keo{
+    margin-bottom: 50px;
+}
+
+.keo__wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.keo__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.keo__value {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.keo__number {
+  width: 64px;
+  border: none;
+  border-bottom: 2px solid #cfcfcf;
+  outline: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 2px 0;
+}
+.keo__unit {
+  opacity: 0.7;
+}
+
+.keo__range-wrap {
+  position: relative;
+  padding: 14px 0 6px;
+}
+.keo__range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #d9d9d9;
+  border-radius: 2px;
+  outline: none;
+}
+
+.keo__range::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+.keo__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f7a300;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+.keo__range::-moz-range-track {
+  height: 4px;
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+.keo__range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f7a300;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.keo__range:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 4px rgba(247, 163, 0, 0.25);
+}
+.keo__range:focus-visible::-moz-range-thumb {
+  box-shadow: 0 0 0 4px rgba(247, 163, 0, 0.25);
+}
+
+.keo__ticks {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.calculator__wrapper-mobile{
+  display: none;
+}
+
+.calculator__wrapper{
+  @include tablet{
+    display: none;
+  }
+}
+
+.calculator__wrapper.calculator__wrapper-mobile{
+  @include tablet{
+    display: flex;
+  }
+}
+
+.calculator__title--mobile{
+  margin-bottom: 66px;
+}
+
+.calculator__string.calculator__string-mobile{
+  flex-direction: column;
+  gap: unset;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="calculator">
+        <div class="container__s newsPage__container">
+            <div class="breadcrumbs text-p-small">
+                Главная страница<span class="breadcrumbs-active">/ Запросить расчет</span>
+            </div>
+            <h1 class="projects__title title-h-1">
+                Запросить расчет
+            </h1>
+            <div class="newsPage__filter-wrapper">
+                <button id="allnews" class="newsPage__filter newsPage__filter-active">Калькулятор</button>
+                <button id="allnews" class="newsPage__filter ">запросить расчет кео</button>
+                <button id="allnews" class="newsPage__filter ">RUSKEO</button>
+                <button id="allnews" class="newsPage__filter ">Получить скидку</button>
+            </div>
+            <p class="newsPage__prew" style="margin-bottom: 30px;">Эта форма позволит нашим специалистам и экспертам
+                оценить Ваш проект и предложить
+                наилучшее решение</p>
+            <form class="ruskeo__calculation">
+                <div class="ruskeo__calculation-right">
+                    <label class="ruskeo__calculation-label" for="">Город*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Название организации*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">ФИО*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Должность</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Адрес местоположения объекта</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Номер телефона для связи*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Адрес эл.почты*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите способ
+                        связи:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-tg">
+                                <span>Telegram</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-wa">
+                                <span>WhatsApp</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-call">
+                                <span>Звонок</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-mail">
+                                <span>E-mail</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите особенности
+                        запроса:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-tg">
+                                <span>Перед сдачей в экспертизу</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-wa">
+                                <span>Проект после экспертизы</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-call">
+                                <span>Расчет КЕО</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-mail">
+                                <span>Подбор системы</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="ruskeo__calculation-left">
+                    <label class="ruskeo__calculation-label" for="">Адрес эл.почты*</label>
+                    <textarea class="ruskeo__calculation-textarea" name="" id=""></textarea>
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите особенности
+                        запроса:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-tg">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>План этажа</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-wa">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>План кровли</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-call">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>Разрезы и сечения</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-mail">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>Другие файлы</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="ruskeo__recapcha">
+                        <div class="ruskeo__recapcha-block">
+                            <div class="ruskeo__recapcha-top">
+                                <div class="ruskeo__recapcha-leftTop">
+                                    <input class="ruskeo__recapcha-checkbox" type="checkbox" name="" id="r_r">
+                                    <label class="ruskeo__recapcha-label" for="r_r">Я не робот</label>
+                                </div>
+                                <div class="ruskeo__recapcha-rightTop">
+                                    <img src="./assets/icons/recapcha.svg" width="32" height="32" alt="рекапча">
+                                    <span class="ruskeo__recapcha-span">reCAPTCHA</span>
+                                </div>
+                            </div>
+                            <p>Конфиденциальность - Условия использования</p>
+                        </div>
+                        <button class="ruskeo__calculation-submit button-hover">Отправить запрос</button>
+                    </div>
+                </div>
+            </form>
+            <form class="ruskeo__calculation mobile">
+                <div class="ruskeo__calculation-right">
+                    <label class="ruskeo__calculation-label" for="">Город*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Название организации*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">ФИО*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Должность</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Адрес местоположения объекта</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Номер телефона для связи*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Адрес эл.почты*</label>
+                    <input class="ruskeo__calculation-input" type="text">
+                    <label class="ruskeo__calculation-label" for="">Адрес эл.почты*</label>
+                    <textarea class="ruskeo__calculation-textarea" name="" id=""></textarea>
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите особенности
+                        запроса:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-tg">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>План этажа</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-wa">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>План кровли</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-call">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>Разрезы и сечения</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l ruskeo__calculation-butPlus" for="cc-mail">
+                                <span class="ruskeo__calculation-plus">+</span>
+                                <span>Другие файлы</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите способ
+                        связи:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-tg">
+                                <span>Telegram</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-wa">
+                                <span>WhatsApp</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-call">
+                                <span>Звонок</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-mail">
+                                <span>E-mail</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <label class="ruskeo__calculation-label ruskeo__calculation-label-m" for="">Выберите особенности
+                        запроса:</label>
+                    <fieldset class="ruskeo__calculation-fieldset">
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-tg" name="contact[]"
+                                value="telegram">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-tg">
+                                <span>Перед сдачей в экспертизу</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-wa" name="contact[]"
+                                value="whatsapp">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-wa">
+                                <span>Проект после экспертизы</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-call" name="contact[]"
+                                value="phone">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-call">
+                                <span>Расчет КЕО</span>
+                            </label>
+                        </div>
+                        <div class="ruskeo__calculation-block">
+                            <input class="ruskeo__calculation-checkbox" type="checkbox" id="cc-mail" name="contact[]"
+                                value="email">
+                            <label class="ruskeo__calculation-fieldset-l" for="cc-mail">
+                                <span>Подбор системы</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="ruskeo__recapcha">
+                        <div class="ruskeo__recapcha-block">
+                            <div class="ruskeo__recapcha-top">
+                                <div class="ruskeo__recapcha-leftTop">
+                                    <input class="ruskeo__recapcha-checkbox" type="checkbox" name="" id="r_r">
+                                    <label class="ruskeo__recapcha-label" for="r_r">Я не робот</label>
+                                </div>
+                                <div class="ruskeo__recapcha-rightTop">
+                                    <img src="./assets/icons/recapcha.svg" width="32" height="32" alt="рекапча">
+                                    <span class="ruskeo__recapcha-span">reCAPTCHA</span>
+                                </div>
+                            </div>
+                            <p>Конфиденциальность - Условия использования</p>
+                        </div>
+                        <a href="#">Нажимая кнопку «Отправить запрос» вы соглашаетесь с политикой
+                            конфиденциальности сайта</a>
+                        <button class="ruskeo__calculation-submit button-hover">Отправить запрос</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

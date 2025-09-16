@@ -1,0 +1,54 @@
+.newsPage {
+  &__prew {
+    margin-top: 50px;
+
+    @include tablet{
+      margin-top: 30px;
+    }
+  }
+  &__mainDescr {
+    margin-top: 70px;
+
+    @include tablet{
+      margin-top: 40px;
+    }
+  }
+  &__topWrapper{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 120px;
+
+    @include tablet{
+      flex-direction: column;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    &-wrap {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__link {
+    border-radius: 30px;
+    border: 1px solid var(--, #ffa500);
+    background: #ffa500;
+    display: flex;
+    height: 46px;
+    padding: 11.5px 45px 13.5px 45px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+}

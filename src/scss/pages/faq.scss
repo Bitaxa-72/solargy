@@ -1,0 +1,45 @@
+.faq {
+  &__info {
+    padding-top: 50px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & h3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__video {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 820px;
+
+    @include desktop {
+      width: 620px;
+    }
+    @include mini-desktop {
+      width: 520px;
+    }
+    @include tablet {
+      margin: unset;
+      width: 100%;
+      justify-self: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    @include small-tablet {
+      display: none;
+    }
+  }
+}
+
+.faq__video.mobile {
+  @include small-tablet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+}

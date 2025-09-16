@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="persons">
+        <div class="persons__banner">
+            <span class="persons__banner--backText">KEORUS <br class="persons__ent"> RUSKEO</span>
+            <div class="container__s">
+                <div class="breadcrumbs persons__breadcrumbs text-p-small">
+                    Главная страница <span class="breadcrumbs-active">/ частным лицам</span>
+                </div>
+                <h1 class="persons__title"><span>Частным</span> лицам</h1>
+                <p>Расчет инсоляции и коэффициента естественной
+                    освещенности помещения</p>
+                <button class="persons__button">Оставить заявку</button>
+            </div>
+        </div>
+        <div class="container__s">
+            <h1 class="projects__title title-h-1">
+                Что такое мансардный фонарь?
+            </h1>
+            <div class="persons__descr">
+                <p>Мансардный фонарь - (или туннель дневного света) действительно отличается от обычных мансардных окон
+                    тем, что используется светопроводная шахта для перенаправления света в удаленные уголки помещения.
+                    Это решение особенно полезно для помещений, где традиционные окна не могут быть установлены или где
+                    прямая и значительная освещенность необходима на значительном удалении от крыши.</p>
+                <p>Разнообразие форм и конструкций современных световодов позволяет дизайнерам и архитекторам решить
+                    проблемы оригинального и экономичного освещения не только простых одноэтажных, но и сложно
+                    сконфигурированных многоэтажных зданий,</p>
+            </div>
+            <div class="productPage__sunLight">
+                <img src="./assets/images/screenshot-product-page.jpg" width="1418" height="691"
+                    alt="Изображение, на котором видна схема дома для освещения его солнечным светом без проводов">
+                <a href="#"
+                    class="productPage__info-button productPage__info-button--width calculator__button button-hover">Рассчитать
+                    естественное освещение самостоятельно</a>
+            </div>
+            <form class="calculator__wrapper">
+                <div class="calculator__wrapper-left">
+                    <label class="calculator__label title-h-4" for="">Укажите тип помещения ?</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Тип помещения</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Укажите подходящий для вашего проекта диаметр
+                        системы</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Диаметр системы, мм</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Укажите где вы хотите смонтировать систему
+                        Solargy*</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Расположение</option>
+                        </select>
+                    </div>
+                    <div class="keo">
+                        <div class="keo__wrap">
+                            <label class="keo__label title-h-4" for="keoRange">Необходимое значение КЕО, %*</label>
+                            <div class="keo__value">
+                                <input id="keoNumber" class="keo__number" type="number" step="0.1" min="0.1" max="5"
+                                    value="0.1">
+                                <span class="keo__unit">%</span>
+                            </div>
+                        </div>
+
+                        <div class="keo__range-wrap">
+                            <input id="keoRange" class="keo__range" type="range" min="0.1" max="5" step="0.1"
+                                value="0.1">
+                        </div>
+
+                        <div class="keo__ticks">
+                            <span>0,1</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                        </div>
+                    </div>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button button-hover">Расчет в люксах</button>
+                        <button class="calculator__button button-hover">расчет в освещенности в % (КЕП)</button>
+                    </div>
+                </div>
+                <div class="calculator__wrapper-right">
+                    <label class="calculator__label title-h-4" for="">Укажите высоту снегового покрова, мм. : ?</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Высота снегового покрова, мм</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Длина от крыши до потолка, м. :*</label>
+                    <input class="calculator__input" type="text" placeholder="Длина световодов">
+                    <label class="calculator__label title-h-4" for="">Площадь освещаемого помещения, м2. :*</label>
+                    <div class="calculator__string">
+                        <input class="calculator__input" type="text" placeholder="Длина">
+                        <input class="calculator__input" type="text" placeholder="Ширина">
+                    </div>
+                    <h4 class="title-h-2">Предварительный расчет:</h4>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button button-hover">Отправить расчет на почту</button>
+                        <button class="calculator__button button-hover">запросить цену</button>
+                    </div>
+                </div>
+            </form>
+            <form class="calculator__wrapper calculator__wrapper-mobile">
+                <div class="calculator__wrapper-left">
+                    <label class="calculator__label title-h-4" for="">Укажите тип помещения ?</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Тип помещения</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Укажите подходящий для вашего проекта диаметр
+                        системы</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Диаметр системы, мм</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Укажите где вы хотите смонтировать систему
+                        Solargy*</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Расположение</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Укажите высоту снегового покрова, мм. : ?</label>
+                    <div class="calculator__select">
+                        <select class="calculator__input" type="text">
+                            <option value="" disabled selected hidden>Высота снегового покрова, мм</option>
+                        </select>
+                    </div>
+                    <label class="calculator__label title-h-4" for="">Длина от крыши до потолка, м. :*</label>
+                    <input class="calculator__input" type="text" placeholder="Длина световодов">
+                    <label class="calculator__label title-h-4" for="">Площадь освещаемого помещения, м2. :*</label>
+                    <div class="calculator__string calculator__string-mobile">
+                        <input class="calculator__input" type="text" placeholder="Длина">
+                        <input class="calculator__input" type="text" placeholder="Ширина">
+                    </div>
+                    <div class="keo">
+                        <div class="keo__wrap">
+                            <label class="keo__label title-h-4" for="keoRange">Необходимое значение КЕО, %*</label>
+                            <div class="keo__value">
+                                <input id="keoNumber" class="keo__number" type="number" step="0.1" min="0.1" max="5"
+                                    value="0.1">
+                                <span class="keo__unit">%</span>
+                            </div>
+                        </div>
+                        <div class="keo__range-wrap">
+                            <input id="keoRange" class="keo__range" type="range" min="0.1" max="5" step="0.1"
+                                value="0.1">
+                        </div>
+                        <div class="keo__ticks">
+                            <span>0,1</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                        </div>
+                    </div>
+                    <h4 class="title-h-2 calculator__title--mobile">Предварительный расчет:</h4>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button button-hover">Расчет в люксах</button>
+                        <button class="calculator__button button-hover">расчет в освещенности в % (КЕП)</button>
+                        <button class="calculator__button button-hover">Отправить расчет на почту</button>
+                        <button class="calculator__button button-hover">запросить цену</button>
+                    </div>
+                </div>
+            </form>
+            <div class="persons__help">
+                <a class="persons__help-link" href="#">Как рассчитать калькулятор?</a>
+                <a class="persons__help-link" href="#">Что такое КЕО?</a>
+                <a class="persons__help-link" href="#">Как определить КЕо?</a>
+            </div>
+            <h3 class="title-h-1">Уже сделано</h3>
+            <ul class="persons__alreadyDone">
+                <li class="persons__alreadyDone-item">
+                    <span class="persons__alreadyDone-num">><span>3500</span></span>
+                    <span class="title-h-5">Смонтировано систем</span>
+                </li>
+                <li class="persons__alreadyDone-item">
+                    <span class="persons__alreadyDone-num">><span>200000</span></span>
+                    <span class="title-h-5">Освещено м²</span>
+                </li>
+                <li class="persons__alreadyDone-item">
+                    <span class="persons__alreadyDone-num">><span>600</span></span>
+                    <span class="title-h-5">Проведено экспертиз</span>
+                </li>
+                <li class="persons__alreadyDone-item">
+                    <span class="persons__alreadyDone-num">><span>50</span>км</span>
+                    <span class="title-h-5">Длина световых шахт</span>
+                </li>
+            </ul>
+            <div class="persons__projects slider fifth">
+                <div class="persons__projects-top">
+                    <h2 class="title-h-1">Реализованные проекты</h2>
+                    <div class="projectPage__slider-butWrap">
+                        <button class="swiper-button-prev projectPage__slider-butPrev fifthPrev">
+                            <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на предыдущий слайд">
+                        </button>
+                        <button class="swiper-button-next projectPage__slider-butNext fifthNext">
+                            <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на следующий слайд">
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-wrapper persons__projects-wrap">
+                    <div class="projects__firstLevel swiper-slide">
+                        <div class="projects__bigCart">
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов) участие в формировании поэтапного и последовательного развития
+                                    общества. Учитывая
+                                    ключевые сценарии поведения, новая модель организационной деятельности обеспечивает
+                                    широкому кругу
+                                    (специалистов) участие в формировании поэтапного и последовательного развития
+                                    общества.
+                                    Учитывая
+                                    ключевые
+                                    сценарии поведения, новая модель организационной деятельности обеспечивает широкому
+                                    кругу (специалистов)
+                                    участие в формировании поэтапного и последовательного развития общества. Учитывая
+                                    ключевые сценарии
+                                    поведения, новая модель организационной деятельности обеспечивает широкому кругу
+                                    (специалистов) участие
+                                    в
+                                    формировании поэтапного и последовательного развития общества.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__smallCarts">
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="persons__slider-info">
+                                <span class="persons__slider-title">
+                                    <span class="persons__slider-title--orange">
+                                        Более 1000
+                                    </span>
+                                    готовых проектов
+                                </span>
+                                <a href="#" class="persons__slider-button button-hover">
+                                    Посмотреть все проекты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__firstLevel swiper-slide">
+                        <div class="projects__bigCart">
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов) участие в формировании поэтапного и последовательного развития
+                                    общества. Учитывая
+                                    ключевые сценарии поведения, новая модель организационной деятельности обеспечивает
+                                    широкому кругу
+                                    (специалистов) участие в формировании поэтапного и последовательного развития
+                                    общества.
+                                    Учитывая
+                                    ключевые
+                                    сценарии поведения, новая модель организационной деятельности обеспечивает широкому
+                                    кругу (специалистов)
+                                    участие в формировании поэтапного и последовательного развития общества. Учитывая
+                                    ключевые сценарии
+                                    поведения, новая модель организационной деятельности обеспечивает широкому кругу
+                                    (специалистов) участие
+                                    в
+                                    формировании поэтапного и последовательного развития общества.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__smallCarts">
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="projects__cart">
+                                <div class="projects__cart-img">
+                                    <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                    <a class="projects__cart-link" href="#">Объект №812</a>
+                                    <button class="projects__cart-gallery">
+                                        <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                            alt="Кнопка для просмотра галлереи реализованного проекта">
+                                    </button>
+                                </div>
+                                <span class="projects__cart-date">
+                                    24.01.2024
+                                </span>
+                                <h2 class="projects__cart-title title-h-2">
+                                    Естественное освешение в школе
+                                </h2>
+                                <p class="projects__cart-descr">
+                                    Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                    обеспечивает широкому
+                                    кругу (специалистов)...
+                                </p>
+                            </div>
+                            <div class="persons__slider-info">
+                                <span class="persons__slider-title">
+                                    <span class="persons__slider-title--orange">
+                                        Более 1000
+                                    </span>
+                                    готовых проектов
+                                </span>
+                                <a href="#" class="persons__slider-button button-hover">
+                                    Посмотреть все проекты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper projectPage__slider sixth">
+                <div class="sixthTop">
+                    <h3 class="title-h-1">Реализованные проекты</h3>
+                    <div class="projectPage__slider-butWrap">
+                        <button class="swiper-button-prev projectPage__slider-butPrev sixthPrev">
+                            <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на предыдущий слайд">
+                        </button>
+                        <button class="swiper-button-next projectPage__slider-butNext sixthNext">
+                            <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на следующий слайд">
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-wrapper projectPage__slider-wrapper sixth">
+                    <div class="swiper-slide projectPage__slider-slide sixth">
+                        <div class="projects__cart">
+                            <div class="projects__cart-img">
+                                <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                <a class="projects__cart-link" href="#">Объект №812</a>
+                                <button class="projects__cart-gallery">
+                                    <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                        alt="Кнопка для просмотра галлереи реализованного проекта">
+                                </button>
+                            </div>
+                            <span class="projects__cart-date">
+                                24.01.2024
+                            </span>
+                            <h2 class="projects__cart-title title-h-2">
+                                Естественное освешение в школе
+                            </h2>
+                            <p class="projects__cart-descr">
+                                Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                обеспечивает широкому
+                                кругу (специалистов)...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide projectPage__slider-slide sixth">
+                        <div class="projects__cart">
+                            <div class="projects__cart-img">
+                                <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                <a class="projects__cart-link" href="#">Объект №812</a>
+                                <button class="projects__cart-gallery">
+                                    <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                        alt="Кнопка для просмотра галлереи реализованного проекта">
+                                </button>
+                            </div>
+                            <span class="projects__cart-date">
+                                24.01.2024
+                            </span>
+                            <h2 class="projects__cart-title title-h-2">
+                                Естественное освешение в школе
+                            </h2>
+                            <p class="projects__cart-descr">
+                                Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                обеспечивает широкому
+                                кругу (специалистов)...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide projectPage__slider-slide sixth">
+                        <div class="projects__cart">
+                            <div class="projects__cart-img">
+                                <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                <a class="projects__cart-link" href="#">Объект №812</a>
+                                <button class="projects__cart-gallery">
+                                    <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                        alt="Кнопка для просмотра галлереи реализованного проекта">
+                                </button>
+                            </div>
+                            <span class="projects__cart-date">
+                                24.01.2024
+                            </span>
+                            <h2 class="projects__cart-title title-h-2">
+                                Естественное освешение в школе
+                            </h2>
+                            <p class="projects__cart-descr">
+                                Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                обеспечивает широкому
+                                кругу (специалистов)...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide projectPage__slider-slide sixth">
+                        <div class="projects__cart">
+                            <div class="projects__cart-img">
+                                <img src="./assets/images/project-first.jpg" alt="Превью реализованного проекта">
+                                <a class="projects__cart-link" href="#">Объект №812</a>
+                                <button class="projects__cart-gallery">
+                                    <img src="./assets/icons/galleryProject.svg" width="34" height="34"
+                                        alt="Кнопка для просмотра галлереи реализованного проекта">
+                                </button>
+                            </div>
+                            <span class="projects__cart-date">
+                                24.01.2024
+                            </span>
+                            <h2 class="projects__cart-title title-h-2">
+                                Естественное освешение в школе
+                            </h2>
+                            <p class="projects__cart-descr">
+                                Учитывая ключевые сценарии поведения, новая модель организационной деятельности
+                                обеспечивает широкому
+                                кругу (специалистов)...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectPage__slider-butWrap mobile">
+                    <button class="swiper-button-prev projectPage__slider-butPrev sixthPrev">
+                        <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на предыдущий слайд">
+                    </button>
+                    <button class="swiper-button-next projectPage__slider-butNext sixthNext">
+                        <img src="./assets/icons/arrow-slider.svg" alt="Кнопка для перехода на следующий слайд">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
