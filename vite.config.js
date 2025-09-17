@@ -14,7 +14,7 @@ export default defineConfig({
             input: {
                 main: './src/index.html',
                 projectPage: './src/projectPage.html',
-                newsPage: './src/news.html',
+                news: './src/news.html',
                 newsPage: './src/newsPage.html',
                 documents: './src/documents.html',
                 faq: './src/faq.html',
@@ -23,7 +23,9 @@ export default defineConfig({
                 productPage: './src/productPage.html',
                 persons: './src/persons.html',
                 about: './src/about.html',
-                ruskeo: './src/ruskeo.html'
+                ruskeo: './src/ruskeo.html',
+                contacts: './src/contacts.html',
+                calculation: './src/calculation.html'
             },
         },
     },
